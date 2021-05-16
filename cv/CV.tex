@@ -1,0 +1,110 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[blue]{casual}
+
+\usepackage[utf8]{inputenc}
+
+% personal data
+\firstname{Jonathan}
+\familyname{Sharyari}
+\title{Software Engineer}
+%\newline \small{\texttt{\textbf{Homepage: {\color{web}\weblink{http://lukas.fyi}}}}}}
+%\title{BCS student of Uppsala \newline \small{\texttt{\textbf{Homepage: {\color{web}\weblink{http://www.mindlevel.net}}}}}}
+%\address{Office 719 SEO\\ 851 S. Morgan St.}{Chicago, IL}
+%\extrainfo{\newline \color{red}Don't miss the other page$\rightarrow$}
+\phone{+46704-16 85 00}
+\email{sharyari@gmail.com}
+\address{Flogsavägen 59E}{75273 Uppsala}
+\homepage{https://github.com/sharyari}
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}
+\nopagenumbers{}
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+\definecolor{web}{rgb}{0.2,0.2,0.2}
+%------------------------------------\photo[64pt][0.4pt]{picture} ----------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{\textbf{Experience}}
+\subsection{\textbf{Work Experience}}
+\cventry{2018 -- Current}{\textbf{Software Engineer}}{}{}{Sigicom AB}{
+    Software development and DevOps with a focus on Erlang and Python \textsc{api} backend development.
+\section{Key Responsibilities}
+\begin{itemize}
+    \item Setup and management of Xen virtualized servers in production
+    \item Automation ans deployment with ansible
+    \item Continuous integration and deployment using Concourse CI
+    \item \textsc{cvs} management
+    \item Python \textsc{api} development using Django web framework
+    \item Erlang \textsc{rest api} development with Decirest
+    \item Coordinating and executing releases to production  
+\end{itemize}
+\section{Key Achievements}
+\begin{itemize}
+    \item Live migration and upgrade of physical and virtual nodes of a production system 
+    \item Transition from Python 2 to 3 of a major code base
+\end{itemize}
+}
+
+\cventry{2015 -- 2018}{\textbf{Personal Assistent}}{}{}{Alma Assistans}{
+    Assisting an elderly person with their daily activities.
+}
+
+\cventry{2009 -- 2011}{\textbf{Various}}{}{}{Uplands Nation}{
+    Various responsibilities, ranging from bartending to staff management and event planning and contract negotiations.
+}
+\cventry{Jun-Aug 2009/2010}{\textbf{Quality Assurance}}{}{}{St Jude Medical}{
+    Receiving, managing and documenting faulty medical products.
+}
+\section{\textbf{Education}}
+\cventry{2008--2015}{\textbf{Master of Science and Technology}}{Computer Science}{\newline University of Uppsala}{Sweden}{}{}
+\cventry{2012--2013}{\textbf{Master of Science and Technology}}{Computer Science}{\newline Freie Universität Berlin}{Germany}{}{}
+
+\subsection{\textbf{Thesis}}
+\cventry{}{\textbf{Master Thesis}}{Uppsala University}{Uppsala}{}{
+Algorithmic Analysis of Channel Machines Using Small Model}
+
+\subsection{\textbf{Some Open Source projects}}
+\cventry{}{\textbf{Pyrlang and Term}}{}{}{}{
+    Erlang node implementation and \textsc{etf} parser in python.
+}
+\cventry{}{\textbf{Decirest}}{}{}{}{
+    REST API framework for erlang.
+}
+\cventry{}{\textbf{Swe-crypto-tax}}{}{}{}{
+    Tool for generating tax form entries for crypto transaction.
+}
+
+\renewcommand{\cvcomputer}[2]{\cvline{#1}{\small#2}}
+\section{\textbf{Computer skills}}
+\cvcomputer{OS}{Linux, Windows}
+\cvcomputer{Programming}{Erlang, Python, C, Rust, Android, Haskell, Bash}
+\cvcomputer{Databases}{PostgreSQL, InfluxDB, Riak}
+\cvcomputer{Rev. control}{Git, Mercurial}
+\cvcomputer{Editors/IDE}{Vim, IntelliJ, Eclipse, MS Code}
+\cvcomputer{Typography}{\LaTeX, Office}
+\cvcomputer{Netwroking}{DNS, HAProxy, Nginx}
+\cvcomputer{Virtualization}{Xen, Ganeti, VirtualBox, Vagrant}
+\cvcomputer{Other}{
+                   Containers\newline
+                   System Administration\newline 
+                   Microcontroller Programming\newline 
+                   Hardware replacement}
+
+\section{\textbf{Other}}
+\cventry{}{\textbf{Languages}}{}{}{}{
+    English (Fluent)\newline
+    Swedish (Mother tounge)\newline
+    German (Lived in Germany, C-Level studies at the University)\newline
+    Persian (Mother tongue)\newline
+    Spanish Basics (Backpacked Latin America)}
+%\cventry{}{\textbf{8 references}}{}{}{}{}
+
+\end{document}
